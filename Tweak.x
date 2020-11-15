@@ -1,3 +1,27 @@
+@interface FBMemPhoto
+- (bool)canViewerDownloadValue;
+- (bool)canViewerShareExternallyValue;
+@end
+
+%hook FBMemPhoto
+- (bool)canViewerDownloadValue {
+	return true;
+}
+- (bool)canViewerShareExternallyValue {
+	return true;
+}
+%end
+
+@interface FBMemFeedStory
+- (bool)canViewerCopyPostPermalinkValue;
+@end
+
+%hook FBMemFeedStory
+- (bool)canViewerCopyPostPermalinkValue {
+	return true;
+}
+%end
+
 %ctor {
 
 	NSURL *fileManagerURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.com.facebook.Facebook"];

@@ -1,3 +1,4 @@
+ARCHS = arm64 arm64e
 INSTALL_TARGET_PROCESSES = Facebook
 
 include $(THEOS)/makefiles/common.mk
