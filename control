@@ -2,7 +2,7 @@ Package: net.p0358.fbdarkmode
 Name: FBDarkMode
 Depends: mobilesubstrate
 Conflicts: com.hackyouriphone.fbdarkmode
-Version: 1.0.2
+Version: 1.0.3
 Architecture: iphoneos-arm
 Description: Enable dark mode in FB and more!
 Maintainer: p0358
